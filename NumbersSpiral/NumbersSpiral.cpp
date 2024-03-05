@@ -107,7 +107,7 @@ int main()
             std::string cur_elem = spiral[x][y];
             if (std::stoi(cur_elem) <= visible_max_value)
             {
-                std::cout << spaces(size(std::to_string(max_value)) - size(cur_elem)) << cur_elem << " ";
+                std::cout << spaces((std::to_string(max_value).length()) - cur_elem.length()) << cur_elem << " ";
                 new_line = true;
             }
         }
